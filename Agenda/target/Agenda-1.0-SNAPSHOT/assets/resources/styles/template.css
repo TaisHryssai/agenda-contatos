@@ -1,0 +1,29 @@
+/**
+    Deixa o rodapé sempre na parte inferior
+*/
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: "Roboto", serif;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.logo-navbar{
+    height: 40px;
+}
+.navbar{
+    background-color: #9cc9c1;
+}
+.button-register{
+    background-color: #15b6cc;
+}
+table td, .table th {
+    padding: 1rem;
+    vertical-align: center;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+}
