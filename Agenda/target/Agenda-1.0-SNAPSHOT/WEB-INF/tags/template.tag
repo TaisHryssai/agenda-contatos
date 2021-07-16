@@ -51,6 +51,8 @@
 
 
 <script src="assets/libraries/jquery/jquery-3.6.0.min.js"></script>
+
+<script src="assets/libraries/jquery.mask.min.js"></script>
 <script src="assets/libraries/bootstrap-4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>

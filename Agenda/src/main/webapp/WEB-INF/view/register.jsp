@@ -13,8 +13,54 @@
 
 <t:template title="Cadastrar Contato">
     <jsp:body>
-        <h1 class="font-weight-bold text-center mt-3">Novo contato</h1>
+        <h1 class="font-weight-bold text-center mt-5">CADASTRAR NOVO CONTATO</h1>
 
-        <a href="hello-servlet">Alô Mundo!</a>
+        <div class="card mt-5" style="background-color: #d5e8e4">
+            <form class="p-5" action="register-contact" method="post">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" class="form-control" id="name" name="name" aria-describedby="name" placeholder="Nome">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefone</label>
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Telefone">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                </div>
+
+                <div class="form-check form-check-inline mt-3">
+                    <a href="list-contact" class="btn btn-warning">Voltar</a>
+                </div>
+                <div class="form-check form-check-inline float-right mt-3">
+                    <button type="submit" class="btn btn-success">Cadastrar</button>
+                </div>
+
+            </form>
+        </div>
+
+        <script>
+            window.onload =  function () {
+                $(document).ready(function () {
+
+                    var cellAndLandMaskBehavior = function (val) {
+                            return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+                        },
+
+                        options = {
+                            onKeyPress: function (val, e, field, options) {
+                                field.mask(cellAndLandMaskBehavior.apply({}, arguments), options);
+                            }
+                        };
+
+                    $("#phone").mask(cellAndLandMaskBehavior, options);
+                });
+            }
+
+        </script>
+
     </jsp:body>
 </t:template>
