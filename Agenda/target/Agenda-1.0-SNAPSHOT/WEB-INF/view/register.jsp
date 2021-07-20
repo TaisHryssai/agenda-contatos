@@ -10,7 +10,6 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-
 <t:template title="Cadastrar Contato">
     <jsp:body>
         <h1 class="font-weight-bold text-center mt-5">CADASTRAR NOVO CONTATO</h1>
@@ -19,7 +18,7 @@
             <form class="p-5" action="register-contact" method="post">
                 <div class="form-group">
                     <label for="name">Nome</label>
-                    <input type="text" class="form-control" id="name" name="name" aria-describedby="name" placeholder="Nome">
+                    <input type="text" class="form-control" id="name" name="name"  placeholder="Nome">
                 </div>
 
                 <div class="form-group">
@@ -36,7 +35,7 @@
                     <a href="list-contact" class="btn btn-warning">Voltar</a>
                 </div>
                 <div class="form-check form-check-inline float-right mt-3">
-                    <button type="submit" class="btn btn-success">Cadastrar</button>
+                    <button class="btn btn-success">Cadastrar</button>
                 </div>
 
             </form>

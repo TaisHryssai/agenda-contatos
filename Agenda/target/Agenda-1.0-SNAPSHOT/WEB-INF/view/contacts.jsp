@@ -10,31 +10,48 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<t:template title="Cadastrar Contato">
+<t:template title="Contatos">
     <jsp:body>
 
         <h1 class="font-weight-bold text-center mt-3">CONTATOS</h1>
-        <table class="table table-contatos" style="background-color: #d5e8e4">
-            <thead class="thead-dark text-center">
-            <tr>
-                <th scope="col">NOME</th>
-                <th scope="col">TELEFONE</th>
-                <th scope="col">EMAIL</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td class="tabela">Mark</td>
-                <td class="tabela">(42)123456789</td>
-                <td class="tabela">algo@algo.com</td>
-            </tr>
-            <tr>
-                <td>Jacob</td>
-                <td>(42)123456789</td>
-                <td>algo@algo.com</td>
-            </tr>
-            </tbody>
-        </table>
+<%--        <table class="table table-contatos" style="background-color: #d5e8e4">--%>
+<%--            <thead class="thead-dark text-center">--%>
+<%--            <tr>--%>
+<%--                <th scope="col">NOME</th>--%>
+<%--                <th scope="col">TELEFONE</th>--%>
+<%--                <th scope="col">EMAIL</th>--%>
+<%--            </tr>--%>
+<%--            </thead>--%>
+<%--            <tbody>--%>
+<%--                <c:if test="${not empty contacts}">--%>
+<%--                        <c:forEach var="contact" items="${contacts}">--%>
+<%--                            <tr>--%>
+<%--                                <td>${contact.name}</td>--%>
+<%--                                <td>${contact.phone}</td>--%>
+<%--                                <td>${contact.email}</td>--%>
+<%--                            </tr>--%>
+<%--                        </c:forEach>--%>
+<%--                </c:if>--%>
+<%--                <c:if test="${empty contacts}">--%>
+<%--                    Não há usuários na lista--%>
+<%--                </c:if>--%>
+
+<%--            </tbody>--%>
+<%--        </table>--%>
+
+        <c:if test="${not empty contacts}">
+            <ul>
+                <c:forEach var="user" items="${contacts}">
+                    <li>${user.name} - ${user.email}</li>
+                </c:forEach>
+            </ul>
+        </c:if>
+        <c:if test="${empty contacts}">
+            Não há usuários na lista
+        </c:if>
         <a href="hello-servlet">Alô Mundo!</a>
+
+
+
     </jsp:body>
 </t:template>

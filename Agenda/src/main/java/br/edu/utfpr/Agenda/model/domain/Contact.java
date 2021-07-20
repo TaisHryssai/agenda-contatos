@@ -1,7 +1,7 @@
 package br.edu.utfpr.Agenda.model.domain;
 import lombok.*;
-
 import javax.persistence.*;
+
 @Entity
 @Table(name = "contacts")
 @Data(staticConstructor = "of")
@@ -14,7 +14,11 @@ public class Contact {
     private Long id;
     @NonNull
     private String name;
+    @NonNull
     private String phone;
+    @NonNull
     private String email;
 
+    @ManyToOne
+    private DDD ddd;
 }

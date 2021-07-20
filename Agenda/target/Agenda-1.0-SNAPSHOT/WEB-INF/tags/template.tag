@@ -16,7 +16,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="assets/resources/images/agenda.png" />
-
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/826671e166.js" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="assets/libraries/bootstrap-4.0.0/css/bootstrap.css"></link>
     <link rel="stylesheet" href="assets/resources/styles/template.css">
@@ -37,7 +38,7 @@
                         <a class="nav-link" href="#">AGENDA DE CONTATOS <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
-                <a class="btn btn-info border border-dark button-register text-light" href="register-contact">Cadastrar Contato</a>
+                <a class="btn btn-info border border-dark button-register text-light" href="cadastrar-contato">Cadastrar Contato</a>
 
             </div>
         </nav>
@@ -48,7 +49,39 @@
 </main>
 
 <!-- rodape-->
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4" style="background-color: #9cc9c1">
 
+    <!-- Footer Elements -->
+    <div class="container">
+
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+
+            <li class="list-inline-item">
+                <a class="btn-floating btn-li mx-1 text-dark" href="https://www.linkedin.com/in/tais-michele-hryssai-da-luz-2a750310a/">
+                    <i class="fab fa-linkedin-in"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-github mx-1 text-dark" href="https://github.com/TaisHryssai">
+                    <i class="fab fa-github"> </i>
+                </a>
+            </li>
+        </ul>
+        <!-- Social buttons -->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+        <a href="#" class="text-dark"> Tais Michele Hryssai da Luz</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 <script src="assets/libraries/jquery/jquery-3.6.0.min.js"></script>
 
