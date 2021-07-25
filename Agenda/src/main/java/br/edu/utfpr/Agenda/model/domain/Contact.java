@@ -18,7 +18,4 @@ public class Contact {
     private String phone;
     @NonNull
     private String email;
-
-    @ManyToOne
-    private DDD ddd;
 }

@@ -21,6 +21,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/libraries/bootstrap-4.0.0/css/bootstrap.css"></link>
     <link rel="stylesheet" href="assets/resources/styles/template.css">
+    <link rel="stylesheet" href="assets/resources/styles/main.css">
 
 <body>
 
@@ -49,15 +50,9 @@
 </main>
 
 <!-- rodape-->
-<!-- Footer -->
 <footer class="page-footer font-small special-color-dark pt-4" style="background-color: #9cc9c1">
-
-    <!-- Footer Elements -->
     <div class="container">
-
-        <!-- Social buttons -->
         <ul class="list-unstyled list-inline text-center">
-
             <li class="list-inline-item">
                 <a class="btn-floating btn-li mx-1 text-dark" href="https://www.linkedin.com/in/tais-michele-hryssai-da-luz-2a750310a/">
                     <i class="fab fa-linkedin-in"> </i>
@@ -69,19 +64,13 @@
                 </a>
             </li>
         </ul>
-        <!-- Social buttons -->
-
     </div>
-    <!-- Footer Elements -->
-
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2021 Copyright:
         <a href="#" class="text-dark"> Tais Michele Hryssai da Luz</a>
     </div>
     <!-- Copyright -->
-
 </footer>
-<!-- Footer -->
 
 <script src="assets/libraries/jquery/jquery-3.6.0.min.js"></script>
 

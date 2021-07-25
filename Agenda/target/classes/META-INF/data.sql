@@ -1,10 +1,3 @@
-INSERT into states values (1, 'SP');
-INSERT into states values (2, 'PR');
-INSERT into states values (3, 'SC');
-INSERT into ddds values (1, '11', 1);
-INSERT into ddds values (2, '12', 1);
-INSERT into ddds values (3, '42', 2);
-INSERT into ddds values (4, '43', 2);
-INSERT into ddds values (5, '47', 3);
-INSERT into ddds values (6, '48', 3);
-INSERT into contacts values (1, 'fulano@gmail.com', 'Fulano', '9999-9999', 3);
+INSERT into contacts values (1, 'fulano@gmail.com', 'Fulano', '(99)9999-9999');
+INSERT into address values (1, '85.053-010', 'Guarapuava', 'Industrial', '797', 'juarez m. lustosa', 'PR', 1);
+INSERT into address values (2, '85.053-010', 'Guarapuava', 'Industrial', '7970', 'juarez m. lustosa', 'PR', 1);

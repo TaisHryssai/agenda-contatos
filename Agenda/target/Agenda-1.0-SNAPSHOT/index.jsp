@@ -7,7 +7,5 @@
     <jsp:body>
         <a href="lista-contatos"> <img class="mt-5 rounded mx-auto d-block img-fluid" src="assets/resources/images/agenda-contatos.png" alt="Card image cap"> </a>
 
-        <a href="cadastrar-contato">cadastrar contato</a>
-
     </jsp:body>
 </t:template>
