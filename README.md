@@ -9,8 +9,8 @@ protótipo: https://quant-ux.com/#/test.html?h=a2aa10a3hS1nbzmXLiTUzJbdQ45uu6TIg
   - [x] Usar redirecionamento depois de requisições POST de um formulário para evitar o reenvio destes dados ao atualizar a página com F5.
   - [x] Para uma mesma rota de um Servlet, usar doGet para encaminhar a uma página e doPost para recuperar os dados da página/formulário
 - [x] Escopo de requisição, sessão e aplicação
-- [ ] Cookies
-  - [ ] Cookie que dura apenas uma sessão do navegador
+- [] Cookies
+  - [] Cookie que dura apenas uma sessão do navegador
   - [x] Cookie com tempo de vida customizado além de uma sessão do navegador
 - [x] Controle de erros e exceção via web.xml
     - [] Tratamento por código de status ou exceção específica
